@@ -1,4 +1,4 @@
-export const reducer = (state=0, action)=>{
+const reducer = (state=0, action)=>{
     if (action.type==='deposit'){
         return state + action.payLoad;
     }
@@ -9,3 +9,4 @@ export const reducer = (state=0, action)=>{
         return state;
     }
 }
+export default reducer;
