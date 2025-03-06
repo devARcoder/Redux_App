@@ -8,8 +8,8 @@ const Navbar = () => {
             <h1 className='text-md font-bold  md:text-xl'>Bank of AR</h1>
         </div>
         <div className="flex space-x-2 text-[15px] md:space-x-6 md:text-xl">
-        <a href="/">Home</a>
-        <a href="/">About</a>
+        <p className='cursor-pointer hover:text-gray-500' >Home</p>
+        <p className='cursor-pointer hover:text-gray-500'>About</p>
         </div>
         <div className="btn">
             <button disabled={true} className="btn btn-primary text-xs md:text-md">Total RS: 1000</button>
