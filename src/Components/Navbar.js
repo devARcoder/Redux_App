@@ -1,6 +1,8 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 const Navbar = () => {
+    const amount = useSelector(state=> state.amount)
   return (
     <div>
       <div className="flex justify-between items-center py-2 px-1 bg-gray-100">
@@ -12,7 +14,7 @@ const Navbar = () => {
         <p className='cursor-pointer hover:text-gray-500'>About</p>
         </div>
         <div className="btn">
-            <button disabled={true} className="btn btn-primary text-xs md:text-md">Total RS: 1000</button>
+            <button disabled={true} className="btn btn-primary text-xs md:text-md">Total RS: {amount}</button>
         </div>
       </div>
     </div>
